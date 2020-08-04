@@ -130,8 +130,8 @@ public class ContentController {
 					String contenturl = row.getCell(4).getStringCellValue();
 					c.setContenturl(contenturl);
 					
-					String price = row.getCell(5).getStringCellValue();
-					c.setPrice(Integer.parseInt(price));
+					Integer price = (int) row.getCell(5).getNumericCellValue();
+					c.setPrice(price);
 					
 					String status = row.getCell(6).getStringCellValue();
 					c.setStatus(status);
